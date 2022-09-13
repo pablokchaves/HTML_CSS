@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+/* Seletor UNIVERSAL */
+*{
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    /*background-image: linear-gradient(to bottom, #0E39AB, #7411AD);*/
+    background-color: #F7F7F8;
+    background-attachment: fixed;
+}
+/* Grupo de seletores */
+h1, h2 {
+    border-radius: 4px;
+    border-left-style: ;
+}
+
+/* Classe exclusiva para o seletor definido */
+h1.center {
+    text-align: center;
+}
+
+p.justify {
+    text-align: justify;
+}
+
+main {
+    width: 550px;
+    border-radius: 08px; /* Arredonda as bordas */
+    margin: auto;
+    padding: 10px; /* Espaço entre a borda e o conteúdo interno */
+    background-color: #8100AC;
+    color: #FFF;
+    box-shadow: 5px 5px 10px #4d006669;
+}

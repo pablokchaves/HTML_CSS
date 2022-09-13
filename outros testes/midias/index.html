@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Midias dentro do HTML</h1>
+    <h2>Imagens dinâmicas</h2>
+    <picture> <!--Tem que ser seguida a ordem dos sources. a base precisa ser a imagem "padrão"-->
+        <source media="(max-width: 750px)" srcset="imagens/p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/m.png" type="image/png">
+        <img src="imagens/g.png" alt="Imagem flexivel G">
+    </picture>
+    <h2>Áudios dentro do site</h2>
+    <p>Utilizamos a tag &lt;audio&gt;</p>
+    <audio preload="metadata" controls>
+        <source src="audios/LeslieStrut.mp3" type="audio/mpeg">
+        <p>Caso seu navegador não consiga reproduzir o áudio, faça o download <a href="audios/LeslieStrut.mp3" download="LeslieStrut.mp3" type="audio/mpeg"></a> </p>
+    </audio>
+    <p>Caso seu navegador não consiga reproduzir o áudio, faça o download <a href="audios/LeslieStrut.mp3" download="LeslieStrut.mp3" type="audio/mpeg">aqui</a> </p>
+    <h2>Atributo <em>controls</em> vai apresentar o player em tela.</h2>
+    <p> <ul>
+            <li>metadata: vai carregar apenas as informações sobre o arquivo (tempo, direitos, tamanho, etc)</li>
+            <li>none: não vai carregar nenhuma informação a respeito do arquivo</li>
+            <li>auto (padrão): vai carregar o arquivo de áudio inteiro assim que a página for carregada (não recomendado)</li>
+        </ul>
+    </p>
+    <p>Dentro da tag audio, podemos adicionar vários source para formatos diferente do mesmo áudio, para caso o navegador não reproduza um dos formatos, possa tentar o outro.</p>
+    <p>Atributo <em>controls</em> vai apresentar o player em tela.</p>
+    <h2>Vídeos no site</h2>
+    <p>Vídeos hospedados localmente</p>
+    <video width="400" controls title="fim de tarde">
+        <source src="videos/3135074892.mp4" type="video/mp4">
+    </video>
+    <p>
+        <strong>IMPORTANTE</strong><br>
+        Quando um vídeo é hospedado LOCALMENTE, irá consumir tráfego da hospedagem, podendo acarretar em alto consumo e assim, gerando custo ao cliente.
+    </p>
+    <h2>Incorporar vídeo do YouTube no site</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zrIfhUVB_3o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

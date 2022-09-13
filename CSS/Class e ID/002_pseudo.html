@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+       <meta charset="UTF-8" />
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Pseudo-classes</title>
+       <style>
+           body {
+               font: normal 1em Arial, Helvetica, sans-serif;
+           }
+
+           div {
+               display: inline-block;
+               background-color: #d3d3d3;
+               border: 1px solid #8b0000;
+               text-align: center;
+               width: 150px;
+               height: 75px;
+           }
+
+           div > p { /* sentença que diz que a tag p é FILHA da div */
+               display:none;
+           }
+
+           div:hover > p {
+               display: block;
+               color: black;
+           }
+
+           div:hover { /* : configura uma pseudo-classe */
+                background-color: aqua;
+           }
+
+           h2.teste {
+               color: #FFF;
+               background-color: black;
+           }
+
+           .teste:hover {
+               background-color: #008000;
+               color: #ff4500;
+           }
+
+           .teste::before {
+               content: '!';
+               font-weight: bold;
+           }
+
+           .teste::after {
+               content: '!';
+               font-weight: bold;
+           } 
+           
+           a {
+               color: #0000ffb4;
+               text-decoration: none;
+           }
+           a:visited {
+               color: #970a50d5;
+           }
+
+           a:hover {
+               text-decoration-line: underline;
+           }
+
+           /* :: configura um pseudo elemento */
+           a::after {
+               content: ' [link]';
+               color: #808080a1;
+           }
+
+       </style>
+    </head>
+    <body>
+        <div>T01
+            <p>Linha oculta</p>
+        </div>
+        <div>T02</div>
+        <div>T03</div>
+
+        <h2 class="teste">Teste de pseudo-classe</h2>
+        <h2>Personalizando links</h2>
+        <ul>
+            <li><a href="https://github.com/pablokchaves" target="_blank" type="external">Repositório Github</a></li>
+            <li><a href="https://youtu.be/vMlrcOVr7po" target="_blank" type="external">Canal do YouTube</a></li>
+            <li><a href="https://www.cursoemvideo.com/" target="_blank" type="external">Site do CursoEmVídeo</a></li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+/* fonte exportada direto da Google */
+
+@font-face {
+    font-family: 'Classual';
+    src: url('fonts/Classual.otf') format('opentype'), url('fonts/Classual.ttf') format('truetype'), url('fonts/Classual swash.otf') format('opentype'), url('fonts/Classual swash.ttf') format('truetype');}
+
+* {
+    color: white;
+    background-color: black;
+}
+h1 {
+    text-align: center;
+    font-size: 6em;
+}
+h1, h2 {
+    font-family: 'Classual', Arial;
+    font-weight: normal;
+}
+
+p {
+    font-family: 'Indie Flower', cursive, sans-serif;
+}

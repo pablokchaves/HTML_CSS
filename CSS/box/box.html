@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixas</title>
+    <style>
+        p.box-level {
+            height: 200px;
+            width: 250px;
+            text-align: justify;
+            background-color: #d3d3d3;
+
+            /*
+            border-width: 5px;
+            border-style: solid;
+            border-color: #8a2be2;
+             Simplificando o border conform a ordem acima */
+            border: 5px solid #8a2be2;
+            border-radius: 12px; /* Arredonda os cantos da borda */
+
+            margin: auto; /* Alinhamento central horizontalmente */
+
+            /*
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            */
+            padding: 10px; /* Automaticamente coloca 10px em todos os lados do padding */
+        }
+
+        a {
+            /*
+            border-width: 2px;
+            border-style: dashed;
+            border-color: #add8e6;
+            A baixo estamos simplificando o border
+            */
+            border: 2px dashed #add8e6;
+            padding: 5px 10px; /* Altera automaticamente o padding top e bottom para 5px e left e right para 10px*/
+        }
+
+        span {
+            border-bottom-style: solid; /*Borda apenas em baixo*/
+            border-color: #000000;
+            border-width: 2px;
+            padding-left: 2px;
+            padding-right: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tipos de Caixas/box</h1>
+    <h2>box-level</h2>    
+    <ul>
+        <li>Sempre inicia em uma nova linha;</li>
+        <li>Ocupa toda a largura (width) da tela;</li>
+    </ul>
+    <p>Exemplo de tag box-level: p, h1~h6, main, header, ul, ol...</p>
+
+    <p>Exemplo de box-level em uma tag p.</p>
+    <p class="box-level">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, debitis illo laboriosam deleniti dignissimos quod, inventore facilis iste eveniet voluptatum magni praesentium soluta totam provident sapiente voluptatem velit perspiciatis? Iusto.</p>
+
+    <h2>inline-level</h2>
+    <ul>
+        <li>Não quebra linha</li>
+        <li>Ocupa apenas o espaço do conteúdo</li>
+    </ul>
+    <p>Exemplo de tag inline-level: span, a, link...</p>
+    <p>Exemplo de um inline-level</p>
+    <p><a href="https://www.lipsum.com/">Lorem ipsum</a>, dolor sit amet <span>consectetur adipisicing elit</span>. Quas hic reprehenderit eius magni accusantium dolore quae perferendis tenetur molestiae dignissimos, autem sint consequuntur ullam eaque quos est earum omnis rem.</p>
+    
+</body>
+</html>

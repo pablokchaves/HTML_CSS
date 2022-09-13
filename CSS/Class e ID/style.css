@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*
+ID são feitos para uso único. Ou seja, será usado uma única vez;
+Class pode ser usada múltiplas vezes;
+*/
+
+h1 {
+    color: blueviolet;
+
+}
+
+h2 {
+    color: brown;
+}
+
+h2#principal { /* ID criada para um h2 */
+    text-align: center;
+}
+
+.justify { /* Classe criada para justificar os textos */
+    text-align: justify;
+}
